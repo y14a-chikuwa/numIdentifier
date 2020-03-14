@@ -1,2 +1,27 @@
-<h4>Hello, world!</h4>
-<p>It works!</p>
+
+{% extends "base.html" %}
+{% block title %}数字を読み取るよ{% endblock %}
+{% load static %}
+
+      {% block body %}
+      <h4>Hello, world!</h4>
+	  <p>It works!</p>
+
+      <div id="wrapper">
+        <div id="page-wrapper">
+          <div class="row">
+            <div class="col-lg-6 full-width margin-top-20percent" >
+              <div class="panel panel-default full-width">
+                <div class="panel-heading">
+                  数字はぁ...9....ですかねぇ...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function() {
+        });
+      </script>
+      {% endblock %}

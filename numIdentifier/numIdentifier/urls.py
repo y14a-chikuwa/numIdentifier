@@ -20,7 +20,7 @@ import identifier.views as identifier_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hello/', identifier_view.topView.as_view())  # URLとViewを組み合わせる！
+    url(r'^top/', identifier_view.topView.as_view())  # URLとViewを組み合わせる！
 ]
 
 
